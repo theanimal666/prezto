@@ -42,10 +42,10 @@ function prompt_meines_end_segment {
   _prompt_meines_current_bg=''
 }
 
-# ✘
+# ✘ ▃ ʿ««
 
 function prompt_meines_build_prompt {
-  prompt_meines_start_segment black default '%(?:%F{green}╭─:%F{red}╭─) %(!:%F{yellow}⚡ :)%(1j:%F{cyan}⚙ :)%F{green}%n%F{green}@%F{green}%m%f'
+  prompt_meines_start_segment black default '%(?:%F{green}╭─:%F{red}╭─)%(!:%F{yellow}⚡ :)%(1j:%F{cyan}⚙ :)%(?:%F{green}:%F{red})\{%n@%m}─%f'
   prompt_meines_start_segment black white '$_prompt_meines_pwd'
 
   if [[ -n "$git_info" ]]; then

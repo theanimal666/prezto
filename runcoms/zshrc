@@ -10,4 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# disable commnd corection prompt
+unsetopt correct
 # Customize to your needs...
+source ~/Dropbox/ConfigSync/zshrc.osx
+
+
